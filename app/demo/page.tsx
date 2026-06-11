@@ -1,9 +1,15 @@
-import { WovenLightHero } from "@/components/ui/woven-light-hero";
+import { WovenLightHero } from "@/component/ui/woven-light-hero";
+
 
 export default function DemoPage() {
   return (
-    <main className="relative">
+    <div className="relative">
       <WovenLightHero />
-    </main>
+      <div className="absolute bottom-8 left-0 right-0 z-20 text-center">
+        <p className="text-white/60 text-sm">
+          Interactive Demo - Move your mouse to interact with the particles
+        </p>
+      </div>
+    </div>
   );
 }
