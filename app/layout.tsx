@@ -1,31 +1,19 @@
-// app/layout.tsx
-import { Metadata } from 'next';
+import type { Metadata } from 'next'
+import './globals.css'
 
-// Built-in SEO metadata API
 export const metadata: Metadata = {
-  title: 'My Next.js Application',
-  description: 'Built with the App Router',
-};
+  title: 'Woven Light Hero',
+  description: 'An interactive tapestry of light and motion',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
-      <body>
-        <header style={{ padding: '1rem', background: '#eee' }}>
-          <nav>Global Navigation Header</nav>
-        </header>
-        
-        {/* Pages or nested layouts are injected here */}
-        <main>{children}</main>
-        
-        <footer style={{ padding: '1rem', background: '#eee' }}>
-          <p>© 2026 My App</p>
-        </footer>
-      </body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
